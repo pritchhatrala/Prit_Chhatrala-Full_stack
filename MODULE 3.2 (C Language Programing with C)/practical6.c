@@ -1,15 +1,19 @@
-#include<stdio.h>
+// How many Even numbers are There
 
-int main(){
-int number, reverse;
+#include <stdio.h>
 
-printf("Enter a number:");
-scanf("%d",&number);
+int main() {
+    int numbers[10];
+    int evenCount = 0;
 
-while(number>0)
-{
-    reverse = number % 10;
-    number = number / 10;
-    printf("%d",reverse);
-}
+    printf("Enter 10 numbers:\n");
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &numbers[i]);
+        if (numbers[i] % 2 == 0) {
+            evenCount++;
+        }
+    }
+
+    printf("There are %d even numbers.\n", evenCount);
+
 }

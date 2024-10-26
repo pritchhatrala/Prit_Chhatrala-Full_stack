@@ -1,20 +1,19 @@
+// sum of odd numbers
+
 #include <stdio.h>
 
 int main() {
-    int num, first_digit, last_digit;
+    int numbers[10];
+    int oddSum = 0;
 
-    printf("Enter a number: ");
-    scanf("%d", &num);
-
-    last_digit = num % 10;
-
-    while (num >= 10) {
-        num /= 10;
+    printf("Enter 10 numbers:\n");
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &numbers[i]);
+        if (numbers[i] % 2 != 0) {
+            oddSum += numbers[i];
+        }
     }
-    first_digit = num;
 
-    int sum = first_digit + last_digit;
-
-    printf("Summation of the first and last digit: %d\n", sum);
+    printf("The sum of odd numbers is: %d\n", oddSum);
 
 }
