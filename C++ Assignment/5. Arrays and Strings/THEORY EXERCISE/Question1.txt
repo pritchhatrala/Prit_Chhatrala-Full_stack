@@ -1,0 +1,46 @@
+1. What are arrays in C++? Explain the difference between single-dimensional and multi-dimensional arrays.
+Ans. :-
+An array in C++ is a collection of elements of the same data type stored in contiguous memory locations. Arrays allow you to store and manage multiple values under a single variable name, which can be accessed using an index.
+
+---Types of Arrays---
+
+1. Single-Dimensional Arrays
+-A single-dimensional array is a linear list of elements, accessed using a single index.
+
+--Declaration--
+data_type array_name[size];
+
+--Example--
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numbers[5] = {1, 2, 3, 4, 5};  // Initialization
+    for (int i = 0; i < 5; i++) {
+        cout << "Element at index " << i << ": " << numbers[i] << endl;
+    }
+    return 0;
+}
+
+
+2. Multi-Dimensional Arrays
+-A multi-dimensional array is an array of arrays. It allows storage of data in a tabular or matrix format.
+
+--Declaration--
+data_type array_name[size1][size2]...[sizeN];
+
+--Example--
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};  // 2x3 matrix
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << "Element at [" << i << "][" << j << "]: " << matrix[i][j] << endl;
+        }
+    }
+    return 0;
+}

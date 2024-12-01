@@ -1,0 +1,18 @@
+1. What are the different data types available in C++? Explain with examples.
+Ans. :-
+Here are some data types in C++ and examples of how they are used:
+
+Int: A built-in data type that represents integers, which can be positive or negative but not fractional or decimal. Int is typically allocated 4 bytes of memory space. 
+
+Char: Used to store single characters, such as 'A', '1', or '$'. The character must be surrounded by single quotes. 
+
+Unsigned int: Similar to int, but can only represent non-negative numeric values without decimal places. Unsigned int takes up to 4 bytes of memory space and has a range of 0 to 4,294,967,295. 
+
+Float: A floating-point number with a precision of six or seven decimal digits. 
+
+Double: A double-precision floating-point number with a precision of about 15 digits. 
+
+Long double: Typically 10 or 12 bytes, but the size may vary on different systems. 
+
+Other data types in C++ include: Boolean, Valueless or void, and Wide character. 
+These data types are the building blocks for creating variables and managing data in C++.

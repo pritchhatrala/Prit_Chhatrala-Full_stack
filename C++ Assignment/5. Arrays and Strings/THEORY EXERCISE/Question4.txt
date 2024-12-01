@@ -1,0 +1,3 @@
+4. Explain string operations and functions in C++.
+Ans. :-
+In C++, strings can be handled using C-style strings (character arrays) or the std::string class from the C++ Standard Library. The std::string class provides a wide range of operations and functions that make string handling easier and safer. C++ provides a wide range of string manipulation functions that make it easy to perform operations such as concatenation, comparison, finding substrings, and modifying strings. While C-style strings require manual handling, std::string provides a safer, more convenient, and flexible way to work with strings in C++.

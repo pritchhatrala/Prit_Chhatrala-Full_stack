@@ -1,0 +1,9 @@
+1. What are the key differences between Procedural Programming and ObjectOrientedProgramming (OOP)?
+ans:- 
+Both Procedural Programming and Object Oriented Programming are high-level languages in programming world and are widely used in the development of applications. On the basis of nature of developing the code, both languages have different approaches on basis of which both are differentiate from each other.
+
+Procedural Programming: 
+Procedural Programming is a programming language that follows a step-by-step approach to break down a task into a collection of variables and routines (or subroutines) through a sequence of instructions. In procedural oriented programming, each step is executed in a systematic manner so that the computer can understand what to do.
+
+Object oriented Programming :
+Object-oriented Programming is a programming language that uses classes and objects to create models based on the real world environment. These objects contain data in the form of attributes and program codes in the form of methods or functions. In OOP, the computer programs are designed by using the concept of objects that can interact with the real world entities.

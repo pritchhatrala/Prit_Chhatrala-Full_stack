@@ -1,0 +1,69 @@
+2. Explain string handling in C++ with examples.
+Ans. :-
+In C++, strings can be handled using two primary approaches:
+
+1.C-style Strings
+-Arrays of characters terminated by a null character (\0).
+
+2.C++ Standard Library Strings (std::string)
+-A more modern and flexible way to handle strings provided by the C++ Standard Template Library (STL).
+
+---1. C-Style Strings---
+
+--Definition:--
+-A C-style string is a sequence of characters stored in an array and terminated by a null character (\0).
+The <cstring> library provides functions to manipulate C-style strings.
+
+Declaration and Initialization:
+char str1[10] = "Hello";      
+char str2[10] = {'W', 'o', 'r', 'l', 'd', '\0'};  
+
+examples:
+#include <iostream>
+#include <cstring>  // Required for string functions
+using namespace std;
+
+int main() {
+    char str1[20] = "Hello";
+    char str2[20] = "World";
+
+    // String concatenation
+    strcat(str1, str2);
+    cout << "Concatenated String: " << str1 << endl;
+
+    // String length
+    cout << "Length of String: " << strlen(str1) << endl;
+
+    // String comparison
+    if (strcmp(str1, str2) == 0)
+        cout << "Strings are equal!" << endl;
+    else
+        cout << "Strings are not equal!" << endl;
+
+    return 0;
+}
+
+
+---2. C++ Standard Library Strings (std::string)---
+
+--Definition:--
+-The std::string class, part of the <string> header, is more versatile and easier to use compared to C-style strings. It eliminates manual memory management and provides a wide range of functions for string manipulation.
+
+Declaration and Initialization:
+#include <iostream>
+#include <string>  // Required for std::string
+using namespace std;
+
+int main() {
+    string str1 = "Hello";
+    string str2 = "World";
+
+    // String concatenation
+    string result = str1 + " " + str2;
+    cout << "Concatenated String: " << result << endl;
+
+    // String length
+    cout << "Length of String: " << result.length() << endl;
+
+    return 0;
+}

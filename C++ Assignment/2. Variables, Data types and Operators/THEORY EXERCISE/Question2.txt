@@ -1,0 +1,22 @@
+2. Explain the difference between implicit and explicit type conversion in C++.
+Ans. :-
+In C++, type conversion refers to the process of transforming a value from one data type to another. There are two main types of type conversion:
+
+
+Implicit Type Conversion (Automatic Conversion):-
+Performed automatically by the compiler without the need for explicit programmer intervention.
+Occurs when a value of one type is used in a context where a different type is expected.
+Generally, implicit conversions happen when there is no loss of information (e.g., converting from a smaller data type to a larger one).
+
+Example:
+int a = 10;
+double b = a; 
+
+
+Explicit Type Conversion (Type Casting):-
+Performed explicitly by the programmer using casting operators.
+Used when you want to forcefully convert a value from one type to another, even if it might result in data loss or unexpected behavior.
+
+Example:
+double a = 10.5;
+int b = static_cast<int>(a); 

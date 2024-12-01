@@ -1,0 +1,14 @@
+4. Explain the purpose and use of constants and literals in C++.
+Ans. :-
+--Purpose of Constants and Literals:--
+
+Constants are fixed values that do not change during the program's execution. They enhance code readability, maintainability, and prevent accidental changes to critical values.
+Literals are the actual values assigned to constants or variables in the code (e.g., numbers, characters, strings, etc.).
+
+--Use of Constants and Literals:--
+
+Improve Code Readability: Using meaningful names for constants like const int MAX_USERS = 100; makes the purpose of the value clear.
+Maintain Consistency: Changing a constant in one place updates it throughout the program.
+Avoid Magic Numbers: Using named constants instead of hard-coded numbers makes code more understandable.
+Prevent Accidental Modification: Constants ensure that critical values, such as PI or MAX_USERS, remain unaltered.
+

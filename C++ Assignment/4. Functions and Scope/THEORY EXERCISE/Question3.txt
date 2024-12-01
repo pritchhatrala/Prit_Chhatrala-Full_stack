@@ -1,0 +1,51 @@
+3. Explain recursion in C++ with an example.
+Ans. :-
+Recursion is a process in which a function calls itself either directly or indirectly to solve a problem. It is particularly useful for solving problems that can be divided into smaller sub-problems of the same type, such as tree traversal, searching algorithms, and mathematical computations.
+
+---Advantages of Recursion---
+->Simplifies code for problems with repetitive or nested structures.
+->Useful for solving problems involving divide-and-conquer or dynamic programming.
+->Makes complex algorithms easier to understand and implement.
+
+---Disadvantages of Recursion---
+->Memory Usage: Recursive calls consume stack space, and excessive recursion can lead to a stack overflow error.
+->Performance Overhead: Recursive calls are slower than iterative loops due to repeated function calls and stack operations.
+->Debugging Complexity: Debugging recursive functions can be challenging because of multiple function calls.
+
+
+---Key Concepts in Recursion---
+1. Base Case:
+-This is the condition where the recursion stops.
+-Without a base case, the recursion will continue indefinitely, causing a stack overflow error.
+
+2. Recursive Case:
+-The part of the function where it calls itself with modified parameters to gradually reach the base case.
+
+3.Stack Memory Usage:
+-Each recursive function call uses stack memory to store variables and the function's state.
+-When the base case is reached, the stack unwinds (returns values from the innermost call to the outermost).
+
+4.Direct vs. Indirect Recursion:
+-Direct Recursion: A function calls itself directly.
+
+
+Example:
+
+#include <iostream>
+using namespace std;
+
+int fibonacci(int n) {
+    if (n <= 1) 
+        return n;
+    else  
+        return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int main() {
+    int n;
+    cout << "Enter the position: ";
+    cin >> n;
+
+    cout << "Fibonacci number at position " << n << " is " << fibonacci(n) << endl;
+    return 0;
+}

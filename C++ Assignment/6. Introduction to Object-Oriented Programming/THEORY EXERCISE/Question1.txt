@@ -1,0 +1,28 @@
+1. Explain the key concepts of Object-Oriented Programming (OOP).
+Ans. :-
+
+-Object-Oriented Programming (OOP) is a programming paradigm that is based on the concept of "objects." These objects are instances of classes, which can contain data (attributes) and functions (methods). OOP is designed to help manage complexity in software systems by organizing code into reusable and modular structures. Below are the key concepts of OOP:
+
+---1. Class and Object---
+-Class: A class is a blueprint or template for creating objects. It defines the attributes (data) and methods (functions) that an object of that class will have.
+-Object: An object is an instance of a class. It is created based on the class and holds specific data for that instance.
+
+---2. Encapsulation---
+-Encapsulation refers to the concept of bundling data (attributes) and methods (functions) that operate on the data into a single unit called a class. It also hides the internal details of the object and only exposes necessary functionality through access modifiers.
+-Access Modifiers: These determine the visibility and access control of class members.
+-public: Members are accessible from outside the class.
+-private: Members are not accessible from outside the class.
+-protected: Members are accessible within the class and its derived classes.
+
+---3. Inheritance---
+-Inheritance allows a class (derived class) to inherit attributes and methods from another class (base class). This promotes code reuse and the creation of a hierarchy.
+-The derived class can override or extend the behavior of the base class.
+
+---4. Polymorphism---
+-Polymorphism means "many forms." It allows objects of different classes to be treated as objects of a common base class. It is primarily achieved through method overriding (runtime     polymorphism) and method overloading (compile-time polymorphism).
+-Method Overloading: Defining multiple methods with the same name but different parameters.
+-Method Overriding: A subclass provides a specific implementation for a method that is already defined in its superclass.
+
+---5. Abstraction---
+-Abstraction involves hiding the complex implementation details and showing only the necessary features of an object. It helps in simplifying complex systems and focusing on relevant aspects.
+-Abstraction is achieved using abstract classes and interfaces. An abstract class cannot be instantiated and typically contains pure virtual functions (methods without implementation).

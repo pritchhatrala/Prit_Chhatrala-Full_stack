@@ -1,0 +1,10 @@
+2. List and explain the main advantages of OOP over POP.
+Ans:-
+Advantages of Object Oriented Programming (OOP)
+
+Object Oriented Programming (OOP) stands as a cornerstone in modern software development, offering a range of compelling advantages. From fostering modularity and reusability to enhancing code security and organization, OOP's influence is profound. In this blog, we will explore the Advantages of Object Oriented Programming, prevalent in crafting robust and scalable software solutions
+
+
+Advantages of POP Language
+
+It is not necessary to replicate the code because it can be reused in different portions of the program. The memory need is also reduced using the Procedural Programming approach. The program flow can be simply followed

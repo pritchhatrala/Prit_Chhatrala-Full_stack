@@ -1,0 +1,15 @@
+4. What are the main input/output operations in C++? Provide examples.
+Ans. :-
+The two instances cout in C++ and cin in C++ of iostream class are used very often for printing outputs and taking inputs respectively. These two are the most basic methods of taking input and printing output in C++. To use cin and cout in C++ one must include the header file iostream in the program
+
+
+
+#include <iostream>
+Using namespace std;
+
+int main() {
+    int age = 25;
+    cout << "Hello, World!" << endl; 
+    cout << "I am " << age << " years old." << endl;
+    return 0;
+}

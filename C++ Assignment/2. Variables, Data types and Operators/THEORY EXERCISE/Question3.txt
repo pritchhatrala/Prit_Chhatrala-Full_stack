@@ -1,0 +1,94 @@
+3. What are the different types of operators in C++? Provide examples of
+each.
+Ans. :- 
+--> 1. Arithmetic Operators
+Perform mathematical operations: +, -, *, /, %
+
+examples: 
+int a = 10, b = 3;
+cout << a + b; 
+cout << a - b; 
+cout << a * b; 
+cout << a / b; 
+cout << a % b; 
+
+
+-->2. Relational Operators
+Compare values: ==, !=, >, <, >=, <=
+
+examples:
+int a = 5, b = 10;
+cout << (a < b);  
+cout << (a > b);
+cout << (a == b);
+cout << (a != b);
+cout << (a >=);
+cout << (a <= b);
+
+
+-->3. Logical Operators
+Evaluate logical expressions: &&, ||, !
+
+examples:
+bool a = true, b = false;
+cout << (a && b);
+cout << (a || b);
+cout << (!b);
+
+
+-->4. Bitwise Operators
+Operate on bits: &, |, ^, ~, <<, >>
+
+examples:
+int a = 5, b = 3;
+cout << (a & b);
+cout << (a | b);
+cout << (a ^ b);
+cout << (~a);
+cout << (a << 2);
+cout << (a >> 2);
+
+
+-->5. Assignment Operators
+Assign or update values: =, +=, -=, *=, /=, %=
+
+examples:
+int a = 5;
+a += 3;
+a -= 2;
+a *= 4;
+a /= 2;
+a %= 3;
+
+-->6. Increment and Decrement Operators
+Increase or decrease by 1: ++, --
+
+examples:
+int a = 5;
+cout << ++a;
+cout << --a;
+
+
+-->7. Conditional (Ternary) Operator
+Shorthand for if-else: condition ? true : false
+
+examples:
+int a = 5, b = 10;
+cout << (a > b ? a : b);
+cout << (a > b ? a : b);
+
+
+-->8. Special Operators
+sizeof: Get the size of a data type.
+
+examples:
+int a = 10, *ptr = &a;
+cout << *ptr;
+cout << sizeof(a);
+
+-->9. Type Casting Operator
+Convert data types
+
+examples:
+double a = 3.14;
+int b = (int)a;

@@ -1,0 +1,13 @@
+3. Explain the steps involved in setting up a C++ development environment.
+Ans. :-
+C++ is a general-purpose programming language. C++ runs on many platforms like Windows, Linux, Mac, etc. Before starting programming in C++, we need to set up an environment on our local computer to compile and run our C++ programs successfully. If you do not want to set up a local environment, you can also use online IDEs for compiling your program.
+
+C++ Environment Setup To execute a program in C++ language on your local computer, you will need to install two softwares on your computer.
+
+1. Text Editor
+A text editor is software used to type code in any language. Examples of a few text editors are Windows Notepad++, VS Code, Linux Vim, MAC TextEdit, etc.
+
+The files created with editor are called source files, and for C++, they typically are named with the extension .cpp
+
+2. C++ Compiler
+When we write code in any computer language, it is not machine-readable since the machine only understands machine code (0/1), so here comes the role of a compiler. C++ compiler compiles your source code into a final executable program (machine code). A compiler is a program that converts instructions into a machine-code or lower-level form so that they can be read and executed by a computer.

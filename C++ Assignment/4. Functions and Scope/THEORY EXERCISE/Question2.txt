@@ -1,0 +1,33 @@
+2. What is the scope of variables in C++? Differentiate between local and global scope.
+Ans. :-
+The scope of a variable in C++ refers to the region of the program where the variable can be accessed. C++ has two main types of variable scopes: local scope and global scope. The scope determines the lifetime and visibility of a variable in the program.
+
+---Types of Scope---
+
+1. Local Scope
+Variables declared within a function or a block (enclosed by {}) have a local scope.
+
+Accessible only within the block where they are declared.
+Created when the block is entered and destroyed when the block is exited.
+
+example:
+
+void example() {
+    int localVar = 10;  // Local variable
+    cout << "Local Variable: " << localVar << endl;
+}
+
+
+2. Global Scope
+Variables declared outside all functions have global scope.
+
+Accessible throughout the program, including all functions (unless shadowed by a local variable).
+Remain in memory for the program's lifetime.
+
+example:
+
+int globalVar = 20;  // Global variable
+
+void example() {
+    cout << "Global Variable: " << globalVar << endl;
+}

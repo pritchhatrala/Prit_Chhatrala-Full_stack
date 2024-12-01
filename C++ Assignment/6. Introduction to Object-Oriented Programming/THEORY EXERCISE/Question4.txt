@@ -1,0 +1,61 @@
+4. What is encapsulation in C++? How is it achieved in classes?
+Ans. :-
+-Encapsulation is one of the fundamental principles of Object-Oriented Programming (OOP). It refers to the concept of bundling the data (variables) and the methods (functions) that operate on the data into a single unit called a class. Encapsulation also involves restricting access to the internal details of an object and exposing only necessary functionality. This helps in protecting the object's state from unwanted changes and ensures better data security.
+
+---How Encapsulation is Achieved in classes:---
+-In C++, encapsulation is implemented by defining classes with private data members (to hide the internal state) and public methods (to interact with the data). The methods allow controlled access to the private data.
+
+---Example:---
+
+#include <iostream>
+using namespace std;
+
+class BankAccount {
+private:
+    double balance;  
+
+public:
+    void setBalance(double amount) {
+        if (amount >= 0) {
+            balance = amount;
+        } else {
+            cout << "Amount cannot be negative!" << endl;
+        }
+    }
+
+    double getBalance() {
+        return balance;
+    }
+
+    void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        } else {
+            cout << "Deposit amount must be positive!" << endl;
+        }
+    }
+
+    void withdraw(double amount) {
+        if (amount > 0 && amount <= balance) {
+            balance -= amount;
+        } else {
+            cout << "Invalid withdrawal amount!" << endl;
+        }
+    }
+};
+
+int main() {
+    BankAccount account;
+
+    account.setBalance(1000.0);
+
+    cout << "Initial Balance: " << account.getBalance() << endl;
+
+    account.deposit(500.0);
+    cout << "After Deposit: " << account.getBalance() << endl;
+
+    account.withdraw(300.0);
+    cout << "After Withdrawal: " << account.getBalance() << endl;
+
+    return 0;
+}

@@ -1,0 +1,68 @@
+4. Explain nested control structures with an example.
+Ans. :-
+Nested control structures occur when one control structure (e.g., loops, conditionals) is placed inside another. This allows the program to handle more complex logic by combining multiple decision-making and iteration mechanisms.
+
+Types of Nested Control Structures:
+-->1 Nested if-else
+-->2 Nested Loops
+-->3 Combination of Loops and Conditional Statements
+
+Example 1: Nested if-else
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age = 20;
+    char gender = 'M';
+
+    if (age >= 18) {
+        if (gender == 'M') {
+            cout << "Adult Male";
+        } else {
+            cout << "Adult Female";
+        }
+    } else {
+        cout << "Minor";
+    }
+
+    return 0;
+}
+
+
+Example 2: Nested Loops
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 3; i++) {
+        for (int j = 1; j <= 2; j++) {
+            cout << "i = " << i << ", j = " << j << endl;
+        }
+    }
+
+    return 0;
+}
+
+
+Example 3: Combination of Loops and Conditional Statements
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= 5; j++) {
+            if (i == j) {
+                cout << "* ";
+            } else {
+                cout << "- ";
+            }
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+

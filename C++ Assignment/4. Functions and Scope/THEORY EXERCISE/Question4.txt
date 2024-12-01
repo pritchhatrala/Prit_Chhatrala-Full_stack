@@ -1,0 +1,17 @@
+4. What are function prototypes in C++? Why are they used?
+Ans. :-
+A function prototype is a declaration of a function that specifies its name, return type, and parameter types without the actual implementation. It tells the compiler what the function looks like so that it can be used before it is defined.
+
+---Why Are Function Prototypes Used?---
+
+1.Enable Early Function Calls:
+-Without a prototype, you must define a function before it is called. With prototypes, functions can be called before their actual implementation.
+
+2.Inform the Compiler:
+-The prototype tells the compiler the function's name, return type, and parameter list, ensuring that calls to the function are made correctly.
+
+3.Error Checking:
+-If the function call doesn’t match the prototype (e.g., incorrect number or types of arguments), the compiler generates an error.
+
+4.Support Modular Programming:
+-Prototypes allow you to separate the function declaration (e.g., in a header file) from its definition (e.g., in an implementation file).

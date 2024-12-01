@@ -1,0 +1,27 @@
+1. What is a function in C++? Explain the concept of function declaration, definition, and calling.
+Ans. :-
+A function in C++ is a reusable block of code that performs a specific task. Functions make programs modular, easier to debug, and more efficient by reducing redundancy.
+
+--> 1. Function Declaration (Prototype)
+The function declaration informs the compiler about the function's name, return type, and the parameters it accepts. It does not include the function's actual implementation (code). Function declarations are typically placed before the main() function or in a header file.
+
+Example:
+
+int add(int a, int b); 
+
+--> 2. Function Definition
+The function definition contains the actual implementation of the function. This is where the code is written to perform the desired task. The definition must match the declaration in terms of return type, name, and parameter list.
+
+Example:
+
+int add(int a, int b) {  
+    return a + b;     
+}
+
+
+--> 3. Function Calling
+The function call is where the function is executed. You provide the required arguments in the function call, and the function performs its task. The result can be stored in a variable, printed directly, or used further in the program.
+
+Example:
+
+int sum = add(5, 3); 
