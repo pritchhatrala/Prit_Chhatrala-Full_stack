@@ -1,0 +1,30 @@
+2. Explain the advantages of using views in SQL databases.
+Ans:-
+----Advantages of Using Views in SQL Databases:
+
+1. Data Abstraction:
+--Views provide a layer of abstraction by hiding the complexity of underlying table structures and queries. Users interact with views instead of complex joins or multiple tables, making it easier to work with the data.
+
+2. Simplified Queries:
+--Complex SQL queries involving multiple tables can be encapsulated into a view, making it easier to retrieve the same data without repeatedly writing the same complex SQL statements. This improves readability and reduces query-writing errors.
+
+3.Security:
+--Views can be used to restrict access to sensitive data. By granting permissions to a view rather than directly to the base tables, you can limit which columns or rows are accessible, ensuring sensitive information is protected.
+
+4.Reusability:
+Once a view is created, it can be reused across multiple queries, applications, or reports, ensuring consistency in data retrieval without needing to repeat complex logic.
+
+5.Data Integrity:
+--Views allow the presentation of data in a consistent way, ensuring that any changes in the underlying tables (such as renaming columns) do not affect the queries using the view.
+
+6.Logical Data Independence:
+--Views provide a level of abstraction that allows changes to the underlying data structure (e.g., changing table schemas) without affecting the applications or users that rely on the view.
+
+7.Performance Optimization:
+--In some cases, views can simplify complex queries and enhance performance by reducing the need for repetitive joins or subqueries. Some database systems also optimize view execution by materializing them as cached results.
+
+8. Maintenance:
+--Views help centralize complex logic in one place, reducing redundancy and making database maintenance easier. For example, if business rules change, you only need to update the view rather than every query.
+
+9. Improved Data Presentation:
+Views can be used to present data in a more user-friendly or business-relevant format, such as aggregating data or transforming it for reporting purposes.

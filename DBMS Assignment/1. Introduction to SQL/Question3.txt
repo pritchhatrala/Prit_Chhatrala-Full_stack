@@ -1,0 +1,23 @@
+3. Describe the role of SQL in managing relational databases.
+Ans:-
+---Role of SQL in Managing Relational Databases---
+
+--SQL (Structured Query Language) is essential for managing relational databases because it provides a standardized way to interact with and manipulate data stored in tables. Its primary roles include:
+
+1. Data Querying:
+->SQL allows users to retrieve specific data using commands like SELECT with filters, conditions, and sorting.
+
+2. Data Manipulation:
+->SQL helps add, update, and delete data using commands like INSERT, UPDATE, and DELETE.
+
+3. Data Definition:
+->SQL defines and modifies database structures such as tables, indexes, and schemas with commands like CREATE, ALTER, and DROP.
+
+4. Data Control:
+->SQL manages user permissions and controls access to data using commands like GRANT and REVOKE.
+
+5. Data Integrity:
+->SQL enforces rules such as primary keys, foreign keys, and constraints to maintain data consistency.
+
+6. Automation:
+->SQL supports stored procedures, triggers, and views for automating tasks and optimizing workflows.

@@ -1,0 +1,51 @@
+2. How do you manage privileges using these commands?
+Ans:-
+
+1.Granting Privileges:
+The GRANT command allows database administrators to assign specific privileges to users or roles, controlling their access to database objects such as tables, views, or procedures.
+
+---Steps to Grant Privileges:---
+--Identify the privileges to assign (e.g., SELECT, INSERT, UPDATE).
+--Specify the database object (e.g., table name) for which the privileges are granted.
+--Use the TO clause to assign privileges to a specific user or role.
+
+Example:
+GRANT SELECT, INSERT
+ON students
+TO john;
+
+-------------------------------------------------------------------------------------------
+
+2. Revoking Privileges:
+The REVOKE command is used to withdraw privileges that were previously granted. This is essential for restricting access when users no longer require it or for security purposes.
+
+---Steps to Revoke Privileges:---
+--Identify the privileges to remove.
+--Specify the database object from which the privileges should be revoked.
+--Use the FROM clause to specify the user or role whose privileges should be revoked.
+
+Example:
+REVOKE INSERT
+ON students
+FROM john;
+
+-----------------------------------------------------------------------------------------------
+3. Managing Privileges:
+--Assign Permissions: Use GRANT to ensure users have the necessary privileges to perform their tasks, such as reading data (SELECT) or modifying it (INSERT, UPDATE, DELETE).
+
+--Limit Access: Use REVOKE to restrict access, ensuring users can no longer perform unauthorized operations.
+
+--Delegating Permissions: Use the WITH GRANT OPTION in the GRANT command to allow a user to further delegate their granted privileges to other users.
+
+Example:
+GRANT SELECT
+ON students
+TO john WITH GRANT OPTION;
+
+
+--evoking All Privileges: Use REVOKE ALL to completely remove all privileges from a user.
+
+Example:
+REVOKE ALL
+ON students
+FROM john;

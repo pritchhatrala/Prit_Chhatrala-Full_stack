@@ -1,0 +1,38 @@
+3. What is the purpose of specifying data types and constraints during table creation?
+Ans:-
+
+1. Data Types:
+Data types specify the kind of data that can be stored in a column. The purpose of defining data types is to ensure data consistency, proper storage, and efficient retrieval. Each column in a table is assigned a data type based on the type of information it is expected to store.
+
+---Common Data Types:
+
+--INT: Used for storing integer values (e.g., 1, 100, -45).
+--VARCHAR(n): Used for storing variable-length character strings, where n defines the maximum number of characters (e.g., VARCHAR(100) for names).
+--DATE: Used for storing date values (e.g., 2024-12-14).
+--TEXT: Used for storing large text or long string data.
+--DECIMAL(p, s): Used for storing fixed-point numbers, where p is the precision and s is the scale (e.g., DECIMAL(10, 2) for financial values like 100.00).
+
+
+---Purpose of Specifying Data Types:
+--Data Integrity: Ensures that only valid types of data are stored in a column, reducing the risk of errors and inconsistent data.
+--Storage Efficiency: Different data types use different amounts of storage, optimizing the database's memory usage.
+--Performance: Proper data types help optimize query performance by allowing more efficient indexing, searching, and sorting.
+
+
+2. Constraints:
+Constraints are rules applied to the data in a table to maintain data integrity, consistency, and accuracy. Constraints define how data is entered into a table, ensuring that certain conditions are met for each row.
+
+---Common Constraints:
+
+--PRIMARY KEY: Ensures that each record is unique and identifies each row in the table.
+--NOT NULL: Ensures that a column cannot have a NULL value, meaning every record must have a value for that column.
+--UNIQUE: Ensures that all values in a column are distinct, preventing duplicate entries.
+--FOREIGN KEY: Ensures that a column’s values correspond to valid values in another table, establishing a relationship between tables.
+--CHECK: Ensures that values in a column meet a specific condition (e.g., age > 18).
+--DEFAULT: Specifies a default value for a column if no value is provided during data insertion.
+
+Purpose of Specifying Constraints:
+--Data Accuracy: Constraints ensure that only valid, accurate data is entered into the database, preventing issues like duplicate records or invalid data.
+--Data Integrity: Constraints help maintain the consistency of data and the relationships between tables, ensuring that no conflicting or incomplete data is stored.
+--Referential Integrity: Constraints like FOREIGN KEY ensure that data in one table correctly references data in another, preserving the integrity of relationships across tables.
+--Enforcing Business Rules: Constraints such as CHECK allow the enforcement of business rules directly in the database (e.g., a student’s age must be above 18).

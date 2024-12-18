@@ -1,0 +1,16 @@
+2. Explain the difference between GROUP BY and ORDER BY.
+Ans:-
+---Summary of GROUP BY vs ORDER BY---
+
+1. GROUP BY:
+--Groups rows with the same values into summary rows.
+--Used with aggregate functions like SUM, COUNT, etc.
+--Produces one result per group.
+
+--Example: GROUP BY category groups data by category.
+
+2. ORDER BY:
+--Sorts rows in ascending (ASC) or descending (DESC) order.
+--Does not group rows; simply arranges them.
+
+--Example: ORDER BY quantity DESC sorts rows by quantity in descending order.

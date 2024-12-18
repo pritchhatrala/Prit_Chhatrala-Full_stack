@@ -1,0 +1,11 @@
+1. What is a view in SQL, and how is it different from a table?
+Ans:-
+---View in SQL:
+--A view in SQL is a virtual table that consists of a stored query that selects data from one or more tables. It doesn't store data physically but provides a way to represent complex queries as if they were a table. A view simplifies querying by abstracting the complexity of the underlying data structure.
+
+
+--View:
+CREATE VIEW EmployeeDetails AS
+SELECT employee_name, department_id
+FROM employees
+WHERE salary > 50000;

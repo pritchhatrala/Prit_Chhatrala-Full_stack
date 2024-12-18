@@ -1,0 +1,35 @@
+1. What are control structures in PL/SQL? Explain the IF-THEN and LOOP control structures.
+Ans:-
+----Control Structures in PL/SQL----
+---Control structures in PL/SQL allow you to control the flow of execution in your program. These structures include conditional statements and looping mechanisms that help in decision-making and repeating tasks. They help in implementing business logic and handling different scenarios within a PL/SQL block.
+
+-----------------------------------------------------------------------------------------------------------------
+----Types of Control Structures in PL/SQL:
+--Conditional Statements: These are used to execute certain code only if a condition is true.
+-IF-THEN
+-IF-THEN-ELSE
+-IF-THEN-ELSIF-ELSE
+
+--Loops: These are used to repeat a block of code multiple times.
+-LOOP
+-WHILE LOOP
+-FOR LOOP
+
+-----------------------------------------------------------------------------------------------------------------
+1. IF-THEN Control Structure:
+The IF-THEN structure is used to execute a block of code only if a specified condition is true. It is the simplest form of conditional logic in PL/SQL.
+
+Syntax:
+IF condition THEN
+   -- Code to execute if the condition is true
+END IF;
+
+-----------------------------------------------------------------------------------------------------------------
+2. LOOP Control Structure:
+The LOOP structure is used to repeat a block of code an indefinite number of times. It continues to loop until it is explicitly terminated using a EXIT statement or when a specific condition is met.
+
+Syntax:
+LOOP
+   -- Code to execute repeatedly
+   EXIT WHEN condition;  -- Exit condition to stop the loop
+END LOOP;

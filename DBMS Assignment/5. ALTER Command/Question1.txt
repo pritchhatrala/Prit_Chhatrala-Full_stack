@@ -1,0 +1,50 @@
+1. What is the use of the ALTER command in SQL?
+Ans:-
+---Use of the ALTER Command in SQL---
+
+Definition:
+-->The ALTER command in SQL is used to modify an existing database object, such as a table. It allows you to change the structure of the table by adding, deleting, or modifying columns and constraints.
+
+
+---Common Uses of the ALTER Command:---
+
+1. Adding a New Column:
+The ALTER command can be used to add new columns to an existing table.
+
+ALTER TABLE table_name
+ADD column_name datatype;
+
+--------------------------------------------------------------------------------------------------
+
+2. Modifying an Existing Column:
+You can change the data type of an existing column or modify other properties like NULL or DEFAULT constraints.
+
+ALTER TABLE table_name
+MODIFY column_name new_datatype;
+
+-------------------------------------------------------------------------------------------------
+
+3. Dropping a Column:
+You can remove a column from an existing table using the DROP COLUMN clause.
+
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+--------------------------------------------------------------------------------------------------
+
+4. Renaming a Table:
+You can rename an existing table using the RENAME clause (Note: syntax may vary by DBMS).
+
+ALTER TABLE old_table_name
+RENAME TO new_table_name;
+
+---------------------------------------------------------------------------------------------------
+
+5. Adding or Dropping Constraints:
+You can add or remove constraints like PRIMARY KEY, FOREIGN KEY, or CHECK using the ALTER command.
+
+ALTER TABLE table_name
+ADD CONSTRAINT constraint_name constraint_type;
+
+ALTER TABLE table_name
+DROP CONSTRAINT constraint_name;

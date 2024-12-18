@@ -1,0 +1,21 @@
+1. What is the purpose of GRANT and REVOKE in SQL?
+Ans:-
+---Purpose of GRANT and REVOKE in SQL---
+
+1.GRANT Command:
+The GRANT command is used to provide specific privileges to users or roles on database objects, such as tables, views, or procedures. It allows database administrators to control access to the database securely.
+
+Syntax:
+GRANT privilege(s)
+ON object
+TO user(s) [WITH GRANT OPTION];
+
+------------------------------------------------------------------------------
+2. REVOKE Command:
+The REVOKE command is used to remove or withdraw previously granted privileges from users or roles.
+
+Syntax:
+REVOKE privilege(s)
+ON object
+FROM user(s);
+

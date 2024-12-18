@@ -1,0 +1,24 @@
+2. How can you add, modify, and drop columns from a table using ALTER?
+Ans:-
+1. Add a Column:
+The ALTER TABLE command is used to add a new column to an existing table.
+
+Syntax:
+ALTER TABLE table_name
+ADD column_name datatype;
+
+--------------------------------------------------------------------------------------
+2. Modify an Existing Column:
+You can modify the properties of an existing column, such as changing its data type or adding constraints.
+
+Syntax:
+ALTER TABLE table_name
+MODIFY column_name new_datatype;
+
+--------------------------------------------------------------------------------------
+3. Drop a Column:
+The DROP COLUMN clause is used to remove a column from an existing table.
+
+Syntax:
+ALTER TABLE table_name
+DROP COLUMN column_name;

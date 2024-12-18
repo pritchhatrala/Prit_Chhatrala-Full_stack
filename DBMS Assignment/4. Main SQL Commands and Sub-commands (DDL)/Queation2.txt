@@ -1,0 +1,15 @@
+2. Explain the CREATE command and its syntax.
+Ans:-
+---CREATE Command in SQL---
+
+--Definition:
+
+The CREATE command in SQL is used to create database objects such as tables, views, schemas, and indexes. It defines the structure of the object and allocates space in the database to store it.
+
+Syntax for Creating a Table:
+CREATE TABLE table_name (
+    column1 datatype constraint,
+    column2 datatype constraint,
+    ...
+);
+

@@ -1,0 +1,47 @@
+1. What is PL/SQL, and how does it extend SQL's capabilities?
+Ans:-
+----PL/SQL (Procedural Language/SQL)----
+
+--PL/SQL is a procedural programming language developed by Oracle that extends the capabilities of SQL (Structured Query Language) by adding procedural features such as loops, conditional statements, and exception handling. It is specifically designed to work with Oracle databases, allowing users to write more complex and efficient database applications.
+
+----How PL/SQL Extends SQL's Capabilities:----
+
+--Procedural Constructs: Variables and Constants: You can declare variables and constants to store intermediate results, making your code more dynamic and flexible. Control Structures: PL/SQL allows the use of loops (FOR, WHILE), conditional statements (IF-ELSE), and case statements, enabling complex logic that SQL alone cannot perform.
+
+--Exception Handling: PL/SQL includes exception handling mechanisms (EXCEPTION block) to catch errors and handle them appropriately, improving error management and control over SQL operations.
+
+--Stored Procedures and Functions: Stored Procedures: PL/SQL allows you to define reusable blocks of code (procedures) that can be executed multiple times with different inputs.
+
+--Functions: You can write functions that return a value, which can be called in SQL statements or within other PL/SQL blocks.
+
+--Triggers: PL/SQL can be used to write database triggers that execute automatically when certain database events occur (such as INSERT, UPDATE, or DELETE), enhancing data integrity and automation.
+
+--Cursors: PL/SQL provides explicit and implicit cursors for handling multiple rows of data. A cursor allows you to fetch and process multiple rows from a query one at a time, which is helpful in situations where you need to process large amounts of data iteratively.
+
+--Dynamic SQL: PL/SQL supports dynamic SQL, which allows the construction and execution of SQL statements at runtime. This is useful when the SQL query needs to be built dynamically based on user input or program logic.
+
+--Performance Enhancements: PL/SQL provides better performance when executing multiple SQL statements within a program because it allows you to bundle multiple SQL commands in a single call, reducing the overhead of communication with the database.
+
+--PL/SQL vs SQL:SQL: A declarative language used to query, insert, update, and delete data in a database. It is primarily used for single operations and does not have advanced features for controlling flow or handling exceptions.PL/SQL: An extension of SQL that provides procedural constructs for managing complex logic and data manipulation within Oracle databases. It supports control flow, error handling, and the creation of reusable procedures and functions.
+
+--Example of PL/SQL:
+DECLARE
+  v_employee_id employees.employee_id%TYPE;
+  v_salary employees.salary%TYPE;
+BEGIN
+  -- Retrieve employee salary
+  SELECT salary INTO v_salary FROM employees WHERE employee_id = 1001;
+
+  -- If salary is above a threshold, increase by 10%
+  IF v_salary > 5000 THEN
+    UPDATE employees SET salary = salary * 1.1 WHERE employee_id = 1001;
+  END IF;
+  
+  -- Exception handling
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      DBMS_OUTPUT.PUT_LINE('Employee not found.');
+    WHEN OTHERS THEN
+      DBMS_OUTPUT.PUT_LINE('An error occurred.');
+END;
+

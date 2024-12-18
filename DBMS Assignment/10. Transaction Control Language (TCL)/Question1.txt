@@ -1,0 +1,26 @@
+1. What is the purpose of the COMMIT and ROLLBACK commands in SQL?
+Ans:-
+
+-----Purpose of COMMIT and ROLLBACK Commands in SQL-----
+
+1. COMMIT Command:
+The COMMIT command is used to save all changes made during the current transaction permanently to the database. Once a COMMIT is executed, the changes cannot be undone.
+
+syntax:
+COMMIT;
+
+Example:
+INSERT INTO students (student_id, student_name) VALUES (1, 'Prit Chhatrala');
+COMMIT;
+
+
+-----------------------------------------------------------------------------
+2. ROLLBACK Command:
+The ROLLBACK command is used to undo changes made during the current transaction. It reverts the database to the state before the transaction began.
+
+syntax:
+ROLLBACK;
+
+Example:
+INSERT INTO students (student_id, student_name) VALUES (1, 'Prit Chhatrala');
+ROLLBACK;

@@ -1,0 +1,19 @@
+1. What is the function of the DROP command in SQL?
+Ans:-
+Function of the DROP Command in SQL
+
+Definition:
+The DROP command in SQL is used to delete an existing database object, such as a table, database, index, or view. When you use the DROP command, the specified object is permanently removed from the database, including all of its data and structure.
+
+----------------------------------------------------------------------------------------------
+
+---Common Uses of the DROP Command:---
+
+1. Dropping a Table: The DROP TABLE command removes the entire table from the database, including all the rows and the table structure.
+
+DROP TABLE table_name;
+
+----------------------------------------------------------------------------------------------
+2. Dropping a Database: The DROP DATABASE command removes the entire database, including all tables, views, and other objects within the database.
+
+DROP DATABASE database_name;

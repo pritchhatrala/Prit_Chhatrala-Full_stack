@@ -1,0 +1,31 @@
+1. What are the basic components of SQL syntax?
+Ans:-
+---Basic Components of SQL Syntax---
+
+1. Statements:
+->SQL commands used to perform specific tasks. Examples include SELECT, INSERT, UPDATE, DELETE, CREATE, and DROP.
+
+2. Clauses:
+->Keywords that define the conditions or modify the behavior of statements. Examples include WHERE, ORDER BY, GROUP BY, and HAVING.
+
+3. Expressions:
+->Used to produce values, such as calculations or comparisons. Examples: age > 18 or salary * 1.1.
+
+4. Predicates:
+->Conditions that evaluate to true, false, or unknown. Used in statements like WHERE or JOIN. Example: age > 18 AND city = 'New York'.
+
+5. Data Types:
+->Defines the type of data stored in a column (e.g., INT, VARCHAR, DATE).
+
+6. Operators:
+->Symbols or keywords used for calculations, comparisons, or logical operations. Examples: =, >, <, AND, OR, LIKE.
+
+7. Functions:
+->Predefined operations to manipulate or retrieve data. Examples: COUNT(), SUM(), AVG(), UPPER().
+
+8. Comments:
+-Single-line comments: -- This is a comment.
+-Multi-line comments: /* This is a comment */.
+
+9. Semicolon (;):
+-->Used to terminate SQL statements. It ensures commands are executed properly.

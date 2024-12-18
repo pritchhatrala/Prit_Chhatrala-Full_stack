@@ -1,0 +1,22 @@
+2. Explain the use of the ORDER BY and WHERE clauses in SQL queries.
+Ans:-
+
+----The ORDER BY and WHERE Clauses in SQL Queries----
+
+1. The WHERE Clause
+The WHERE clause is used to filter records that meet specific conditions in SQL queries. It allows you to retrieve only the rows that match certain criteria.
+
+Syntax:
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+------------------------------------------------------------------------------------
+
+2. The ORDER BY Clause
+The ORDER BY clause is used to sort the result set of a query in either ascending (default) or descending order based on one or more columns.
+
+Syntax:
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;

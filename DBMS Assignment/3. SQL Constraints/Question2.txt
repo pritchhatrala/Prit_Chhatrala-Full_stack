@@ -1,0 +1,32 @@
+2. How do PRIMARY KEY and FOREIGN KEY constraints differ?
+Ans:-
+1. Definition
+PRIMARY KEY: A constraint used to uniquely identify each record in a table.
+FOREIGN KEY: A constraint used to establish a relationship between two tables by linking a column in one table to the PRIMARY KEY in another table.
+
+2. Purpose:
+PRIMARY KEY: Ensures that no two rows have the same value in the specified column(s) and that the value cannot be NULL.
+FOREIGN KEY: Enforces referential integrity by ensuring that the value in the referencing table matches a value in the referenced table.
+
+3. Number of Constraints:
+PRIMARY KEY: A table can have only one PRIMARY KEY, but it can consist of multiple columns (composite key).
+FOREIGN KEY: A table can have multiple FOREIGN KEYS referencing different tables.
+
+4. Example:
+--PRIMARY KEY:
+CREATE TABLE students (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(100)
+);
+
+
+--FOREIGN KEY:
+CREATE TABLE enrollments (
+    enrollment_id INT PRIMARY KEY,
+    student_id INT,
+    FOREIGN KEY (student_id) REFERENCES students(student_id)
+);
+
+5. Data Integrity:
+PRIMARY KEY: Ensures uniqueness and non-null values within the table.
+FOREIGN KEY: Ensures that the referenced value exists in the parent table.

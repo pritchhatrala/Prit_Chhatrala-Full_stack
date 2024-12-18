@@ -1,0 +1,39 @@
+1. What is a trigger in SQL? Describe its types and when they are used.
+Ans:-
+--A trigger in SQL is a special type of stored procedure that automatically executes or fires when certain events occur in a database. Triggers are used to enforce business rules, maintain data integrity, or automate system tasks without requiring user intervention.
+
+--Triggers are associated with a specific table and are activated by certain data modification operations such as INSERT, UPDATE, or DELETE.
+
+--------------------------------------------------------------------------------------------------------------------
+----Types of Triggers in SQL:
+
+1. BEFORE Trigger:
+--Execution Timing: It is executed before an insert, update, or delete operation is performed on the table.
+--Use Case: BEFORE triggers are typically used to validate or modify data before it is actually committed to the table.
+
+--Example: You can use a BEFORE trigger to ensure that a value being inserted into a table meets specific conditions.
+
+2. AFTER Trigger:
+--Execution Timing: It is executed after the insert, update, or delete operation has been performed on the table.
+--Use Case: AFTER triggers are often used to perform tasks that should occur after the data modification, like updating a log table or cascading changes to related tables.
+--Example: You can use an AFTER trigger to automatically update a summary table after a new record is inserted.
+
+3. INSTEAD OF Trigger:
+--Execution Timing: It is executed in place of the operation (INSERT, UPDATE, DELETE) that triggered it.
+--Use Case: INSTEAD OF triggers are typically used in views, allowing you to specify custom behavior for insertions, updates, or deletions that would normally not be allowed.
+--Example: In a view, you can define an INSTEAD OF trigger to handle how changes are propagated to the underlying tables.
+
+----------------------------------------------------------------------------------------------------------------------
+----Trigger Events (Actions):
+--Triggers can be triggered by specific events such as:
+
+1. INSERT: Fired when a new row is added to a table.
+2. UPDATE: Fired when an existing row is updated.
+3. DELETE: Fired when a row is deleted from a table.
+
+----------------------------------------------------------------------------------------------------------------------
+----When to Use Triggers:
+--Data Validation: To ensure that only valid data is inserted or updated in the database.
+--Audit and Logging: To automatically log changes made to the data (e.g., tracking who made the changes and when).
+--Cascade Updates: To automatically propagate changes in one table to related tables, maintaining data consistency.
+--Complex Business Logic: To enforce complex business rules that cannot be easily implemented using standard SQL constraints.

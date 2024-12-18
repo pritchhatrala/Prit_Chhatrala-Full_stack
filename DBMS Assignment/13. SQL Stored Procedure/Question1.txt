@@ -1,0 +1,19 @@
+1. What is a stored procedure in SQL, and how does it differ from a standard SQL query?
+Ans:-
+---Stored Procedure in SQL:
+--A stored procedure is a precompiled collection of SQL statements and optional control-flow logic (e.g., loops, conditionals) that can be stored and executed on the database server. It is reusable and often used to perform repetitive tasks or complex operations.
+
+---Example:
+Stored Procedure:
+CREATE PROCEDURE GetEmployeeDetails (IN dept_id INT)
+BEGIN
+    SELECT employee_name, salary
+    FROM employees
+    WHERE department_id = dept_id;
+END;
+
+
+Standard SQL Query:
+SELECT employee_name, salary
+FROM employees
+WHERE department_id = 1;

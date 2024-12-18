@@ -1,0 +1,24 @@
+2. What are the implications of dropping a table from a database?
+Ans:-
+Implications of Dropping a Table from a Database
+
+1. Data Loss:
+When you drop a table, all the data stored within that table is permanently deleted. This includes all rows, columns, and any indexes or constraints associated with the table. Once the table is dropped, it is not recoverable unless a backup is available.
+
+2. Loss of Table Structure:
+The structure (schema) of the table, including the column definitions and data types, is removed. This means you lose the blueprint of the table that defines how the data was organized.
+
+3. Impact on Foreign Key Constraints:
+If the table being dropped has any foreign key relationships with other tables, the foreign key constraints referencing the dropped table will be broken. This could affect data integrity and relationships between tables.
+
+4. Cascading Effects on Dependent Objects:
+Dropping a table that is referenced by other database objects like views, stored procedures, or triggers can cause these objects to fail. For example, any view or stored procedure that uses the dropped table will no longer work, resulting in errors.
+
+5. Loss of Indexes:
+Any indexes associated with the table (including primary keys and unique constraints) are also removed when the table is dropped. This can have a performance impact on queries that previously relied on those indexes.
+
+6. Impact on Applications and Users:
+If applications or users depend on the table being present, dropping the table can cause failures in those systems. The application may try to access data from the dropped table, resulting in errors.
+
+7. Reduced Database Integrity:
+If the table being dropped is crucial to maintaining the integrity of the database (e.g., a lookup table or a key data store), removing it could lead to inconsistencies or missing relationships in the database.

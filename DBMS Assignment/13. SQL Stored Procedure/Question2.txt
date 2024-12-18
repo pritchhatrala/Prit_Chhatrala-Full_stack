@@ -1,0 +1,33 @@
+2. Explain the advantages of using stored procedures.
+Ans:-
+----Advantages of Using Stored Procedures----
+
+1. Improved Performance:
+--Stored procedures are precompiled and cached on the database server, reducing the need for repeated parsing and execution planning, which speeds up execution.
+
+2. Reusability:
+--Once created, stored procedures can be reused multiple times across different applications or queries, saving development time and effort.
+
+3. Reduced Network Traffic:
+--Multiple SQL statements are executed on the database server in a single call, reducing the need for multiple client-server interactions.
+
+4. Enhanced Security:
+--Permissions can be granted on the stored procedure level instead of granting direct access to the underlying tables, ensuring data is accessed securely.
+
+5. Maintainability:
+--Business logic can be centralized in the database as stored procedures, making it easier to update and maintain.
+
+6. Modularity:
+--Complex operations can be broken into smaller, manageable stored procedures, improving code organization and readability.
+
+7. Error Handling:
+--Stored procedures can include advanced error handling using control-flow statements like TRY...CATCH, enhancing robustness.
+
+8. Control Flow Logic:
+--Stored procedures support loops, conditionals, and variables, allowing for more complex and dynamic operations than standard SQL queries.
+
+9. Consistency:
+--Procedures ensure consistent implementation of business rules and operations, avoiding discrepancies in application logic.
+
+10. Reduced Risk of SQL Injection:
+--Parameters in stored procedures are strongly typed, reducing the likelihood of SQL injection attacks compared to ad-hoc SQL queries.

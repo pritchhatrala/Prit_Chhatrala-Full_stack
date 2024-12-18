@@ -1,0 +1,33 @@
+4. What are the key features of SQL?
+Ans:-
+Key Features of SQL
+
+1. Data Querying:
+-->SQL allows users to retrieve specific data from databases using commands like SELECT.
+
+2. Data Manipulation:
+-->SQL supports inserting, updating, and deleting data using INSERT, UPDATE, and DELETE.
+
+3. Data Definition:
+-->SQL defines the structure of databases, tables, and indexes using commands like CREATE, ALTER, and DROP.
+
+4. Data Control:
+-->SQL manages user permissions and data access with commands like GRANT and REVOKE.
+
+5. Data Integrity:
+-->SQL enforces constraints like primary keys, foreign keys, and unique constraints to maintain data consistency.
+
+6. Transactions:
+-->SQL supports transaction control with commands like COMMIT, ROLLBACK, and SAVEPOINT to ensure data reliability.
+
+7. Standardization:
+-->SQL is a standardized language, making it compatible with most relational database systems like MySQL, PostgreSQL, and Oracle.
+
+8. Support for Views:
+-->SQL allows the creation of views for simplifying complex queries and improving security.
+
+9. Join Operations:
+-->SQL supports joining multiple tables to retrieve related data efficiently.
+
+10. Portability:
+-->SQL can be used across different database systems with minimal changes to the code.

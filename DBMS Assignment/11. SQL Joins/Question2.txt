@@ -1,0 +1,12 @@
+2. How are joins used to combine data from multiple tables?
+Ans:-
+1. Identify Common Columns:
+--Tables must have at least one column in common (called a "key").
+--These columns act as a bridge between the tables.
+
+2.Join Conditions:
+--Use the ON clause to specify how rows from one table relate to rows in the other table (e.g., table1.column = table2.column).
+
+3. Combine Rows:
+--SQL evaluates each row from the first table against rows in the second table.
+--Based on the type of join, SQL decides which rows to include in the result.

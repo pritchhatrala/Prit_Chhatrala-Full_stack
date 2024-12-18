@@ -1,0 +1,36 @@
+1. Explain the concept of SAVEPOINT in transaction management. How do ROLLBACK and
+COMMIT interact with savepoints?
+Ans:-
+--Concept of SAVEPOINT in Transaction Management:
+In SQL, a SAVEPOINT is a point within a transaction that allows you to partially roll back to that specific point without affecting the entire transaction. It is used to mark intermediate stages within a transaction. If an error occurs or you need to undo certain operations, you can roll back to the SAVEPOINT rather than rolling back the entire transaction.
+
+How ROLLBACK and COMMIT Interact with SAVEPOINT:
+
+1. COMMIT:
+A COMMIT statement finalizes all changes made during a transaction, including those made after any SAVEPOINTs. Once a transaction is committed, all changes are permanently saved to the database.
+Interaction with SAVEPOINT: Once a COMMIT is issued, all SAVEPOINTs within the transaction are cleared. You cannot roll back to a SAVEPOINT after committing the transaction.
+
+2.ROLLBACK:
+A ROLLBACK statement undoes all changes made during a transaction up to the point of the last commit or to a specific SAVEPOINT.
+Interaction with SAVEPOINT: If you issue a ROLLBACK TO SAVEPOINT <savepoint_name>, the transaction will revert to the state it was in when the specified SAVEPOINT was created. However, if you issue a full ROLLBACK without specifying a SAVEPOINT, the entire transaction will be rolled back, including all SAVEPOINTs.
+
+Example:
+-- Start a new transaction
+BEGIN;
+
+-- Insert some records into a table
+INSERT INTO employees (employee_id, employee_name, salary) VALUES (1, 'John Doe', 50000);
+
+-- Set a SAVEPOINT after the first insert
+SAVEPOINT before_update;
+
+-- Update a record (let's assume this might fail later)
+UPDATE employees SET salary = 55000 WHERE employee_id = 1;
+
+-- Check for error and decide to roll back to the savepoint if needed
+-- In case of an error or decision to undo the update, we can use ROLLBACK TO SAVEPOINT
+ROLLBACK TO SAVEPOINT before_update;
+
+-- Continue with more operations or a commit
+-- COMMIT the transaction to make all changes permanent
+COMMIT;

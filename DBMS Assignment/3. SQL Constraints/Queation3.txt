@@ -1,0 +1,21 @@
+3. What is the role of NOT NULL and UNIQUE constraints?
+Ans:-
+1. NOT NULL Constraint:
+--Ensures that a column cannot have a NULL value.
+--It is used to enforce the presence of a value in a specific column for every row in a table.
+
+--Example:
+CREATE TABLE students (
+    student_id INT NOT NULL,
+    student_name VARCHAR(100) NOT NULL
+);
+
+2. UNIQUE Constraint:
+--Ensures that all values in a column (or a combination of columns) are distinct.
+--It allows NULL values unless explicitly combined with the NOT NULL constraint.
+
+--Example:
+CREATE TABLE students (
+    email VARCHAR(100) UNIQUE
+);
+

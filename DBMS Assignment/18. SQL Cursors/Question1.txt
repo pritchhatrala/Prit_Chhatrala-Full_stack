@@ -1,0 +1,63 @@
+1. What is a cursor in PL/SQL? Explain the difference between implicit and explicit cursors.
+Ans:-
+---Cursor in PL/SQL
+A cursor in PL/SQL is a pointer that holds the context area for a SQL query. It is used to retrieve rows from a database one at a time, allowing the program to process the results of a query.
+
+----PL/SQL provides two types of cursors:
+--Implicit Cursor
+--Explicit Cursor
+----------------------------------------------------------------------------------------------------------
+1. Implicit Cursor
+An implicit cursor is automatically created by PL/SQL when a DML (Data Manipulation Language) statement such as INSERT, UPDATE, DELETE, or a SELECT INTO query is executed. PL/SQL handles the opening, fetching, and closing of implicit cursors automatically.
+
+Features of Implicit Cursor:
+It is automatically created by Oracle for any SQL query executed in PL/SQL.
+You don’t need to declare or manage it explicitly.
+It’s used with single SQL queries that return a single value or affect a set of rows (like INSERT, UPDATE, DELETE).
+The results are automatically handled.
+Example of Implicit Cursor:
+DECLARE
+   employee_name VARCHAR2(50);
+BEGIN
+   -- SELECT INTO implicitly uses an implicit cursor
+   SELECT name INTO employee_name FROM employees WHERE employee_id = 101;
+
+   DBMS_OUTPUT.PUT_LINE('Employee Name: ' || employee_name);
+END;
+/
+
+----------------------------------------------------------------------------------------------------------
+2. Explicit Cursor
+An explicit cursor is a cursor that you define and manage manually in PL/SQL. You explicitly declare it, open it, fetch rows, and close it. Explicit cursors are used when you need to process multiple rows or when you want to handle complex queries more efficiently.
+
+--Features of Explicit Cursor:
+-It is declared and managed explicitly by the programmer.
+-It’s ideal for queries that return multiple rows.
+-It gives you more control over the context of the SQL query.
+-You can open, fetch, and close the cursor manually.
+
+---Steps to Use an Explicit Cursor:
+-Declare: Define the cursor and its SQL query.
+--Open: Open the cursor to establish the context area for the query.
+
+--Fetch: Retrieve data row by row from the cursor.
+--Close: Close the cursor to release the resources.
+
+Example of Explicit Cursor:
+DECLARE
+   CURSOR emp_cursor IS
+      SELECT employee_name FROM employees;
+   
+   emp_name VARCHAR2(50);
+BEGIN
+   OPEN emp_cursor;  -- Open the cursor
+   
+   LOOP
+      FETCH emp_cursor INTO emp_name;  -- Fetch a row into emp_name
+      EXIT WHEN emp_cursor%NOTFOUND;   -- Exit loop when no rows are found
+      DBMS_OUTPUT.PUT_LINE('Employee Name: ' || emp_name);
+   END LOOP;
+   
+   CLOSE emp_cursor;  -- Close the cursor
+END;
+/

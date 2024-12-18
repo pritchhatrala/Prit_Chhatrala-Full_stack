@@ -1,0 +1,21 @@
+2. Write the general structure of an SQL SELECT statement.
+Ans:-
+----------------------------------------------------------
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition
+GROUP BY column
+HAVING condition
+ORDER BY column;
+
+----------------------------------------------------------
+
+---Explanation---
+
+1. SELECT: Specifies the columns to retrieve. Use * to select all columns.
+2. FROM: Specifies the table to query data from.
+3. WHERE: Filters rows based on a condition (optional).
+4. GROUP BY: Groups rows with the same values into summary rows (optional).
+5. HAVING: Filters groups based on a condition (optional).
+6. ORDER BY: Sorts the result by one or more columns in ascending (ASC) or descending (DESC) order (optional).

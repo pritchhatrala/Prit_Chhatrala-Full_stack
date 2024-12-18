@@ -1,0 +1,12 @@
+1. What is the SELECT statement, and how is it used to query data?
+Ans:-
+The SELECT Statement in SQL
+
+Definition:
+The SELECT statement is used in SQL to query (retrieve) data from one or more tables in a database. It allows you to specify which columns to retrieve and can include conditions to filter the data.
+
+
+Syntax:
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;

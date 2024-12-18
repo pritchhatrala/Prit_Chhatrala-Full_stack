@@ -1,0 +1,23 @@
+2. Explain the difference between DBMS and RDBMS.
+Ans:-
+Difference between DBMS and RDBMS
+
+1. Definition:
+--DBMS is a software system for managing and organizing data.
+--RDBMS is a type of DBMS that stores data in tables with rows and columns.
+
+2. Data Structure:
+--DBMS stores data as files or key-value pairs without strict structure.
+--RDBMS stores data in tabular format with well-defined relationships.
+
+3. Relationships:
+--DBMS does not support relationships between data.
+--RDBMS enforces relationships using primary and foreign keys.
+
+4.Normalization:
+--DBMS does not support normalization.
+--RDBMS supports normalization to reduce redundancy.
+
+5. Integrity:
+--DBMS lacks strict integrity constraints.
+--RDBMS ensures data integrity with constraints.
